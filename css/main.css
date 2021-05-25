@@ -1,0 +1,34 @@
+title{
+  font-family: serif;
+}
+body{
+  margin: 4px;
+  font-family: sans-serif;
+}
+
+/* Header */
+
+header li{
+  display: inline-block;
+  margin: 5px;
+  padding: 4px;
+}
+
+header ul{
+  position: absolute;
+  top: 0;
+  right : 10px;
+}
+
+header li:hover{
+  transform: scale(1.2);
+  transition: transform 0.7s;
+}
+
+header li a{
+  text-decoration: none;
+}
+
+/* Main */
+
+/* Footer */
