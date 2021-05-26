@@ -2,32 +2,114 @@ title{
   font-family: serif;
 }
 body{
-  margin: 4px;
+  margin: 0px;
   font-family: sans-serif;
 }
 
 /* Header */
+#body-header{
+  background-image: url('../static/GradientBackground2.JPG');
+  background-size: cover;
+  height: 65vh;
+  opacity: 0.8;
+  background-position: center;
+  background-attachment: fixed;
+  margin-top: -20px;
+  color: lightgrey;
+}
 
-header li{
+.header-list{
+  list-style: none;
+  text-align: right;
+  margin-left: 10px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.header-list li{
   display: inline-block;
-  margin: 5px;
-  padding: 4px;
+  margin-left: 8px;
+  margin-top: 10px;
+  margin-right: 8px;
+  padding-left: 0px;
+  padding-top: 0px;
+  font-size: 1.1rem;
 }
 
-header ul{
-  position: absolute;
-  top: 0;
-  right : 10px;
-}
-
-header li:hover{
+.header-list li:hover{
   transform: scale(1.2);
   transition: transform 0.7s;
+  color: lightgrey;
+  border-top: 0px;
+  /* border-left: 1px solid white; */
+  border-bottom: 1px solid white;
 }
 
-header li a{
+.header-list li a{
+  color: white;
   text-decoration: none;
 }
+
+.body-header p{
+  display: inline-block;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+
+.Hi{
+  font-size: 1.5rem;
+  padding: 5px;
+  /* margin-bottom: -20px; */
+  position:fixed;
+  left: 15vw;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.Name{
+  font-size: 2.5rem;
+  padding: 5px;
+  padding-top: 18px;
+  position:fixed;
+  left: 15vw;
+  margin-top: 2px;
+  margin-bottom: 0px;
+}
+.Name .tooltip{
+  visibility: hidden;
+  width: 60%;
+  margin: 10px;
+  text-align: center;
+  padding-left: 2px;
+  padding-right: 2px;
+  border-radius: 5px;
+  background-color: darkgrey;
+  color: white;
+  position: absolute;
+  /* top: 20%; */
+  opacity: 0;
+  transition: opacity 1.2s;
+}
+.Name a{
+  text-decoration: none;
+  color: lightgrey;
+}
+
+.Name a:hover{
+  color: orange;
+}
+
+.Name a:hover .tooltip{
+  visibility: visible;
+  opacity: 0.6;
+}
+.Name span{
+  font-size: 1.5rem;
+  padding: 0px;
+  /* margin-top: 2px; */
+}
+
 
 /* Main */
 
