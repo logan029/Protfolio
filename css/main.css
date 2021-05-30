@@ -80,11 +80,11 @@ body{
 }
 .Name .tooltip{
   visibility: hidden;
-  width: 40%;
+  width: auto;
   margin: 10px;
   text-align: center;
-  padding-left: 2px;
-  padding-right: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
   border-radius: 5px;
   background-color: darkgrey;
   color: white;
@@ -183,6 +183,75 @@ section:nth-child(2n+1){
 .exp-heading-icon{
   background: url('../static/work-exp.png');
   opacity: 0.8;
+}
+
+.timeline{
+  position: relative;
+  width: 75%;
+  border: 2px solid black;
+}
+
+.timeline-box{
+  position: relative;
+  width: 40%;
+  left: 5%;
+  min-height: 150px;
+  margin: 5px;
+  border: 2px solid black;
+}
+
+.timeline-box:nth-child(2n){
+  left: 53%;
+}
+
+.timeline-box:nth-child(2n+1)::after{
+  content: '';
+  border-radius: 50%;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: red;
+  position: absolute;
+  top: 35%;
+  right: -12%;
+  z-index: 1;
+}
+
+.timeline-box:nth-child(2n)::after{
+  content: '';
+  border-radius: 50%;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: red;
+  position: absolute;
+  top: 47.5%;
+  left: -9.5%;
+  z-index: 1;
+}
+
+.timeline-divider{
+  position: absolute;
+  height: 60%;
+  width: 0%;
+  border-left: 3px dashed blue;
+  top: 15%;
+  left: 50%;
+}
+
+.traveller-icon{
+  position: sticky;
+  top: 40%;
+  background-image: url('../static/circle.png');
+  width: 15px;
+  height: 15px;
+  display: block;
+  background-size: cover;
+}
+
+.timeline-traveller{
+  position: sticky;
+  top: 35%;
+  transform: rotate(100deg);
+  z-index: 2;
 }
 
 /* Certifications */
