@@ -188,7 +188,7 @@ section:nth-child(2n+1){
 .timeline{
   position: relative;
   width: 75%;
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 
 .timeline-box{
@@ -196,8 +196,8 @@ section:nth-child(2n+1){
   width: 40%;
   left: 5%;
   min-height: 150px;
-  margin: 5px;
-  border: 2px solid black;
+  margin: 25px;
+  /* border: 2px solid black; */
 }
 
 .timeline-box:nth-child(2n){
@@ -211,8 +211,8 @@ section:nth-child(2n+1){
   height: 0.5rem;
   background-color: red;
   position: absolute;
-  top: 35%;
-  right: -12%;
+  top: 29%;
+  right: -8.5%;
   z-index: 1;
 }
 
@@ -224,13 +224,13 @@ section:nth-child(2n+1){
   background-color: red;
   position: absolute;
   top: 47.5%;
-  left: -9.5%;
+  left: -13.5%;
   z-index: 1;
 }
 
 .timeline-divider{
   position: absolute;
-  height: 60%;
+  height: 65%;
   width: 0%;
   border-left: 3px dashed blue;
   top: 15%;
@@ -239,7 +239,7 @@ section:nth-child(2n+1){
 
 .traveller-icon{
   position: sticky;
-  top: 40%;
+  top: 35%;
   background-image: url('../static/circle.png');
   width: 15px;
   height: 15px;
